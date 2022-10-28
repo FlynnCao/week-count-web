@@ -12,3 +12,5 @@ intro:
   aka: Also known as
   whats-your-name: What's your name?
 not-found: Not found
+home:
+  current_hint: This is week {week}

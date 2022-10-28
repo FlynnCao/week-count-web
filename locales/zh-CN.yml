@@ -12,3 +12,6 @@ intro:
   aka: 也叫
   whats-your-name: 输入你的名字
 not-found: 未找到页面
+home:
+  toggle_langs:点击A文切换语言
+  current_hint:当前是第{week}周

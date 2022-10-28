@@ -19,6 +19,7 @@ specifiers:
   https-localhost: ^4.7.1
   markdown-it-link-attributes: ^4.0.1
   markdown-it-shiki: ^0.5.1
+  moment: ^2.29.4
   nprogress: ^0.2.0
   pinia: ^2.0.22
   pnpm: ^7.13.2
@@ -48,6 +49,7 @@ dependencies:
   '@unocss/reset': 0.45.28
   '@vueuse/core': 9.3.0_vue@3.2.40
   '@vueuse/head': 0.9.7_vue@3.2.40
+  moment: 2.29.4
   nprogress: 0.2.0
   pinia: 2.0.22_bfjwoga25wxjazzogo7o372nwq
   vue: 3.2.40
@@ -6049,6 +6051,10 @@ packages:
       pathe: 0.3.8
       pkg-types: 0.3.3
     dev: true
+
+  /moment/2.29.4:
+    resolution: {integrity: sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==}
+    dev: false
 
   /mrmime/1.0.1:
     resolution: {integrity: sha512-hzzEagAgDyoU1Q6yg5uI+AorQgdvMCur3FcKf7NhMKWsaYg+RnbTyHRa/9IlLF9rf455MOCtcqqrQQ83pPP7Uw==}
