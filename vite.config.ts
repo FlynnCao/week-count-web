@@ -67,7 +67,12 @@ export default defineConfig({
 
     // https://github.com/antfu/unocss
     // see unocss.config.ts for config
-    Unocss(),
+    Unocss({
+      rules: [
+        ['m-1', { margin: '0.25rem' }],
+        ['abs-center', { position: 'relative', top: '50vh', margin: '0 auto', transform: 'translateY(-50%)' }],
+      ],
+    }),
 
     // https://github.com/antfu/vite-plugin-vue-markdown
     // Don't need this? Try vitesse-lite: https://github.com/antfu/vitesse-lite

@@ -22,5 +22,7 @@ useHead({
 </script>
 
 <template>
-  <RouterView />
+  <div class="abs-center">
+    <RouterView />
+  </div>
 </template>

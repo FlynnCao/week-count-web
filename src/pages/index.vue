@@ -10,12 +10,15 @@ else
   weekCount.value = 1
 
 const { t } = useI18n()
+const weekText = computed(() => {
+  return t('home.current_hint', { week: weekCount.value })
+})
 </script>
 
 <template>
   <div>
     <p class="font-bold uppercase" style="font-size:5vw;">
-      {{ t('home.current_hint', { week: weekCount }) }}
+      {{ weekText }}
     </p>
   </div>
 </template>

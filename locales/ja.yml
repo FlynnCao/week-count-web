@@ -10,4 +10,7 @@ intro:
   dynamic-route: 動的ルートのデモ
   hi: こんにちは、{name}!
   whats-your-name: 君の名は。
+  aka: としても知られている
 not-found: 見つかりませんでした
+home:
+  current_hint: 今週は{week}週目
