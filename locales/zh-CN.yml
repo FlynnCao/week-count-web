@@ -14,3 +14,11 @@ intro:
   not-found: 未找到页面
 home:
   current_hint: 这是第{week}周
+  datepicker_label: 请选择开始日期
+  dp_default_option:
+    day: 请选择一天
+    month: 请选择月份
+    year: 请选择年份
+  has_set: 您已设置开始日期！
+  reset: 重置
+not-found: 未找到

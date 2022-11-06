@@ -11,6 +11,14 @@ intro:
   hi: こんにちは、{name}!
   whats-your-name: 君の名は。
   aka: としても知られている
+  not-found: ''
 not-found: 見つかりませんでした
 home:
   current_hint: 今週は{week}週目
+  datepicker_label: 開始日を選択してください
+  dp_default_option:
+    day: 曜日を選択してください
+    month: 月を選択してください
+    year: 年を選択してください
+  has_set: 開始日が設定されました。
+  reset: リセット

@@ -14,3 +14,11 @@ intro:
 not-found: Not found
 home:
   current_hint: This is week {week}
+  datepicker_label: Please choose a start date
+  has_set: You have set the Start Date! 
+  reset: Reset
+  dp_default_option:
+    year: Please choose a year
+    month: Please choose a month
+    day: Please choose a day
+    
