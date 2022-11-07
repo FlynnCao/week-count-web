@@ -5,11 +5,12 @@ import duration from 'dayjs/plugin/duration'
 import isLeapYear from 'dayjs/plugin/isLeapYear'
 import customParseFormat from 'dayjs/plugin/customParseFormat'
 
+// emits
+const emit = defineEmits(['change'])
 dayjs.extend(duration)
 dayjs.extend(isLeapYear)
 dayjs.extend(customParseFormat)
 dayjs.extend(duration)
-
 // stores and utils
 const { t } = useI18n()
 const pref = usePerferenceStore()
@@ -55,13 +56,13 @@ for (let i = 0; i < 30; i++)
   days.value.push(dayjs().subtract(i, 'd'))
 
 // confirm
-console.log('pref.startDate :>> ', pref.startDate)
-console.log('pref.startDate !== null :>> ', pref.startDate !== null)
-const hasSet = ref<boolean>(pref.startDate !== null)
+const hasStartDate: boolean = pref.getStartDateAndEndDate() !== null
+const hasSet = ref<boolean>(hasStartDate)
 const confirmSelect = () => {
   const start: Dayjs = dayjs(`${selectedYear.value.toString()}-${selectedMonth.value.toString()}-${(selectedDay.value + 1).toString()}`, 'YYYY-M-D')
   pref.setStartDateAndEndDate(start)
-	  hasSet.value = true
+  hasSet.value = true
+  emit('change')
 }
 </script>
 

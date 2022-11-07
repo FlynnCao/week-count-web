@@ -16,6 +16,9 @@ import Unocss from 'unocss/vite'
 import Shiki from 'markdown-it-shiki'
 
 export default defineConfig({
+  esbuild: {
+    drop: ['console', 'debugger'],
+  },
   resolve: {
     alias: {
       '~/': `${path.resolve(__dirname, 'src')}/`,
@@ -23,6 +26,7 @@ export default defineConfig({
   },
 
   plugins: [
+
     Preview(),
 
     Vue({
